@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker run --rm -it \
+  --name debug_frankenphp_container \
+  -e SERVER_NAME=:80 \
+  -v ".:/app" \
+  -p 8282:80 \
+  dunglas/frankenphp:alpine
