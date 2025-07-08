@@ -78,3 +78,5 @@ RUN git clone --branch=PHP-8.4 https://github.com/php/php-src.git . && \
 			echo "zend_extension=opcache.so" >> /etc/frankenphp/php.ini && \
 			echo "opcache.enable=1" >> /etc/frankenphp/php.ini && \
 	php --version
+
+WORKDIR /app
